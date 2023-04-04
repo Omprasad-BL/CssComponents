@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height: 97vh;
+            gap: 10px;
+            overflow-x: auto;
+            scroll-snap-type:x mandatory;
+            overflow-y: hidden;
+        }
+        .slide{
+
+            scroll-snap-align: start;
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+        }
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1609378868458-d81fbaebac31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="" width="100%">
+        </div>
+
+        <div class="slide">
+            <img src="/7125751.jpg" alt="" width="100%">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1611921672865-b6d9da86a426?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" width="100%">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1609378868458-d81fbaebac31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="" width="100%">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1616033481409-1bc22a923483?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" width="100%">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1609378868458-d81fbaebac31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="" width="100%">
+        </div>
+    </div>
+</body>
+</html>

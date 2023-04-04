@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+    padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type:y mandatory;
+   scroll-behavior: smooth ;
+    display: grid;
+}
+.section{
+    display: grid;  
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* background-color: burlywood; */
+    color: white;
+    font-size: 4.3rem;
+}
+.one{
+    background-color: red;
+
+}
+.two{
+    background-color: yellow;
+}
+.three{
+    background-color: tomato;
+}
+.four{
+    background-color: cadetblue;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section three">
+            content One
+        </div>
+        <div class="section two">
+            content two
+        </div>
+        <div class="section one">
+            content three
+        </div>
+        <div class="section four">
+            content four
+        </div>
+      
+    </div>
+</body>
+</html>

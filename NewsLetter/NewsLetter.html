@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            background-color: rgb(31, 71, 53);
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 100svh;
+        }
+        .container{
+            /* margin:0px 20%; */
+
+            padding: 10px;
+            width: max-content;
+            height: max-content;
+            box-sizing: border-box;
+            border-radius: 8px;
+            margin-top: 10px;
+            background-color: rgb(255,255,255);
+            /* background:linear-gradient(to top left , rgb(255, 96, 96),yellow ,rgb(108, 232, 108)); */
+
+           backdrop-filter: blur(10px);
+           -webkit-backdrop-filter: blur(10px);
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            /* opacity: 0.5; */
+        }
+        #email{
+            padding: 3px 5px;
+            /* margin: 0px 0px; */
+            border-radius: 5px;
+            border: 1px dashed red;
+            height: max-content;
+            padding:8px 16px;
+            outline: none;
+            background-color:lightgreen;
+
+        }
+        #submit{
+            padding: 3px 8px;
+            outline: none;
+            margin-left: 6px;
+            border: 1px dashed red;
+            background-color: lightgreen;
+            border-radius: 5px;
+
+        }
+        #email::placeholder{
+       color: azure;
+        }
+        .closer{
+            display: flex;
+            justify-content: flex-end;
+        }
+        h1,h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            /* text-align: center; */
+        }
+       .wrapper{
+        display: flex;
+        justify-content: first baseline;
+
+       }
+    </style>
+</head>
+<body> <form action="">
+    <div class="container">
+         <div class="closer">
+            <a id="close" href="#" onclick="close()"> &timesb;</a>
+         </div>
+         <h3>Enter Email:</h3>
+
+         <div class="wrapper">
+            <input id="email" type="email" required aria-checked="true" placeholder="Example@gmail.com"> <input type="submit" value="Submit" id="submit">
+         </div>
+         <h1>We Will Send Monthly NewsLetter</h1>
+
+      </div>
+    </form>
+</body>
+</html>
