@@ -1,0 +1,32 @@
+        body {
+  padding: 40px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px 20px;
+  align-items: stretch;
+  margin: 10px;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+.grid > article img {
+    /* border-top-left-radius: 50% ;
+    border-top-right-radius: 50%; */
+    border-radius: 6px;
+    width: 100%;
+/* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+
+
+
+}
+
+.grid .text {
+  padding: 20px;
+}
