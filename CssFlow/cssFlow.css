@@ -1,0 +1,39 @@
+.data{
+    /* background:repeating-linear-gradient(45deg, red , lightgreen); */
+    background: url("brothers.jpg");
+    width: 400px;
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+  }
+  .item{
+   
+    width:max-content;
+    height: max-content;
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: contrast(10px);
+    backdrop-filter: contrast(10px);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 5s linear 0.1s infinite;
+  
+  }
+  @keyframes spin {
+  
+      0%{
+          /* background-position: -200px; */
+          transform: translateX(-200px);
+      }
+      100%{
+          /* background-position: 200px; */
+          transform: translateX(400px);
+  
+      }
+  }

@@ -22,10 +22,11 @@
            display: grid;
            align-items: center;
            justify-content: center;
-           background:linear-gradient(45deg,rgba(203, 67, 67,0.4) ,rgba(79, 141, 79,0.4));
+           background:rgba(79, 141, 79,0.1);
            border-radius: 10px;
            backdrop-filter: blur(10px);
            -webkit-backdrop-filter: blur(10px);
+           box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
         }
         h1{
             line-height: 50px;
@@ -107,7 +108,7 @@
     <div class="login_form">
         <h1>Login here</h1>
         <h3>UserName</h3> 
-        <input type="text" placeholder="UserName" >
+        <input type="text" placeholder="UserName" required >
         <h3>Password</h3>
         <input type="text" placeholder="Password"  required>
         <br>
