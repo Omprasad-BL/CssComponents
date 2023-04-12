@@ -1,0 +1,96 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+    .wrapper{
+        display: grid;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn1{
+            padding: 6px 15px;
+            background-color: yellow;
+            width: max-content;
+            transition: all 1s;
+    }
+    .btn1:hover{
+        background: radial-gradient(rgb(241, 203, 132),rgb(246, 246, 246));
+    }
+    .btn2{
+        padding: 6px 15px;
+             background:linear-gradient(60deg,red,yellow);
+            width: max-content;
+            border-radius: 6px;
+    }
+    .btn2:hover{
+        margin-top: 6px;
+    }
+    .btn3{
+        padding: 6px 15px;
+            background-color: transparent;
+            width: max-content;
+            border: 1px dashed black;
+            transition: all .2s ;
+    }
+    .btn3:hover{
+        background-color: lightskyblue;
+        border: none;
+    }
+    .btn4{
+        padding: 6px 15px;
+            background-color: transparent;
+            width: max-content;
+            border: none;
+            border-bottom: 4px solid rgb(252, 93, 93);
+            transition: all .2s ;
+
+    }
+    .btn4:hover{
+        border: none;
+        border-top: 4px solid rgb(28, 107, 63);
+    }
+    .btn5{
+        padding: 6px 15px;
+            background-color: transparent;
+            width: max-content;
+            background-color: lightgreen;
+            border: 1px dashed black;
+
+    }
+    .btn6{
+        padding: 6px 15px;
+            background-color: transparent;
+            width: max-content;
+            background-color: lightgreen;
+        transition: all 0.2s;
+    }
+    .btn6:hover{
+        border: none;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        background-color: transparent;
+    }
+    .btn7{
+        border-radius: 2px;
+        padding: 6px 15px;
+            background-color: transparent;
+            width: max-content;
+            background:radial-gradient(rgb(46, 85, 119), rgb(116, 138, 172));
+            border: 1px dashed black;
+            color: white;
+    }
+    .btn8{
+        padding: 6px 15px;
+            background:linear-gradient(90deg,rgb(224, 124, 57), rgb(203, 216, 81));
+            width: max-content;
+            background-color: lightgreen;
+            border: 1px dashed black;
+            transition: all 1s;
+    }
+    .btn8:hover{
+        background-position: -151px;
+    }
+   
