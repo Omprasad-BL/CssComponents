@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="SocialMedia.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        body{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
         .wrapper{
             display: flex;
-            gap: 10px;
+            /* gap: 10px; */
             background-color: rgb(187, 123, 123);
             padding: 10px 20px;
             width:max-content;
+            border-radius: 10px;
         }
         .item{
             font-size: 40px;
@@ -36,7 +42,7 @@
 
         }
         .item4:hover{
-            color: rgb(126, 180, 247);
+            color: rgb(50, 102, 167);
             text-shadow: 2px 2px 2px rgb(152, 195, 241);
 
         }
@@ -45,16 +51,69 @@
             text-shadow: 2px 2px 2px rgb(255, 251, 213);
 
         }
+        .wrapper2{
+            margin-top: 10px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color:darkgreen;
+            width: max-content;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            width: max-content;
+            padding: 10px;
+        }
+        .item11:hover{
+            color: rgb(52, 84, 190);
+            text-shadow: 2px 2px 2px rgb(85, 111, 240);
+            background-color: white;
+        }
+        .item22:hover{
+            color: rgb(52, 84, 190);
+            text-shadow: 2px 2px 2px rgb(98, 131, 216);
+            background-color: white;
+        }
+        .item33:hover{
+            color: rgb(190, 52, 52);
+            text-shadow: 2px 2px 2px rgb(187, 121, 79);
+            background-color: white;
+        }
+        .item44:hover{
+            color: rgb(47, 88, 174);
+            text-shadow: 2px 2px 2px rgb(116, 131, 218);
+            background-color: white;
+        }
+        .item55:hover{
+            color: rgb(177, 105, 42);
+            text-shadow: 2px 2px 2px rgb(251, 212, 157);
+            background-color: white;
+        }
 
+      
     </style>
 </head>
 <body>
+    <h1>SocialMedia icons</h1>
     <div class="wrapper">
         <i class="fa fa-brands fa-twitter item item1"></i>
         <i class="fa fa-brands fa-facebook-f item item2"></i>
         <i class="fa fa-brands fa-reddit item item3"></i>
         <i class="fa fa-brands fa-telegram item item4"></i>
         <i class="fa fa-sharp fa-regular fa-envelope item item5"></i>
+    </div>
+
+    <div class="wrapper2">
+        <i class="fa fa-brands fa-twitter item item11"></i>
+        <i class="fa fa-brands fa-facebook-f item item22"></i>
+        <i class="fa fa-brands fa-reddit item item33"></i>
+        <i class="fa fa-brands fa-telegram item item44"></i>
+        <i class="fa fa-sharp fa-regular fa-envelope item item55"></i>
     </div>
 </body>
 </html>
