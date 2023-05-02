@@ -1,0 +1,91 @@
+.container{
+    width: 100vw;
+    height: 100svh;
+   
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: bisque;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    
+}
+nav>a{
+    width: 100px;
+    /* min-width: calc(100%-10px); */
+    /* max-width: max-content; */
+    height: max-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: lightgreen;
+    /* flex: 1; */
+}
+nav>a:hover{
+    color: rgb(201, 238, 250);
+    background-color: rgb(45, 111, 177);
+    border: 1px dashed black;
+
+}
+/* a:hover::after{
+    content: "Done";
+    transition: all 1s;
+} */
+.nav{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color:yellow ; */
+}
+.left{
+    justify-self: start;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+}
+.right{
+ /* background-color: violet; */
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+}
+.nav>.left>a, .nav>.right>a, input{
+    text-decoration: none;
+    background-color: lightseagreen;
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+.right>a:hover, .left>a:hover{
+    color: white ;
+    background-color: rgb(111, 94, 220);
+
+}
+input, input::placeholder{
+    all: unset;
+    background-color: cadetblue;
+    color: white;
+    height: 100%;
+    border-radius: 8px;
+    text-align: center;
+}
+.left1>input{
+    width: 100%;
+}
+.right1>a{
+ transform:skewX(-20deg);
+}
