@@ -1,0 +1,78 @@
+.a{
+    width:max-content;
+    padding: 10px;
+    background-color: rgb(185, 128, 82);
+    margin: 10px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+    background-color: white;
+outline: 1px dashed rgb(36, 36, 27);
+}
+.img {
+    object-fit:fill;
+  position:absolute;
+  object-position: top;
+  left: 10px;
+  width: 120px;
+  height: 60px;
+  justify-content: flex-start;
+}
+#web_logo{
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* a:visited{
+    color: rgb(183, 51, 62);
+} */
+/* a:link{
+    color: purple;
+} */
+nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: max-content;
+    margin-right: 20px;
+    padding: 10px;
+   
+}
+footer,b{
+    position:absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* column-count: 2; */
+    width: 100%;
+    height:max-content;
+    /* background-color: steelblue; */
+}
+li{
+list-style: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+text-transform: capitalize;
+font-weight: bold;
+}
+body{
+    overflow-x: hidden;
+}
+marquee{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(210, 248, 230);
+}
+.container{
+    display: grid;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
