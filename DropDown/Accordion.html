@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 80%;
+            margin: auto;
+        }
+        header{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            width: 100%
+        }
+        .active{
+            background-color: rebeccapurple;
+        }
+        h1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="acc">Section 1</header>
+        <h1 class="panel">
+            hellow wood
+        </h1> <br>
+        <header class="acc">Section 2</header>
+        <h1 class="panel">
+            hellow wood
+        </h1> <br>
+        <header class="acc">Section 3</header>
+        <h1 class="panel">
+            hellow wood
+        </h1> <br>
+        <header class="acc">Section 4</header>
+        <h1 class="panel">
+            hellow wood
+        </h1>
+    </div>
+    <script>
+       
+        var acc=document.getElementsByClassName("acc");
+        var i;
+        for(i=0;i<acc.length;i++){
+            acc[i].addEventListener("click",function() {
+                this.classList.toggle("active");
+                var panel=this.nextElementSibling;
+                if (panel.style.display === "block") {
+      panel.style.display = "none";
+    //   panel.classList.add("active");
+      panel.classList.add("remove");
+      this.style.fontWeight="normal";
+
+
+    } else {
+      panel.style.display = "block";
+      panel.classList.add("active");
+      this.style.fontWeight="bolder";
+    }
+                
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .w3sidenav{
+            position: fixed;
+            left: 0;
+            top: 0;
+
+            width: 100vw;
+
+            z-index: 11;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            background-color: lightseagreen;
+            margin: 0;
+        
+        }
+        .open{
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        h1:hover{
+            width: 100%;
+            background-color: black;
+            color: wheat;
+        }
+     
+    </style>
+</head>
+<body>
+    
+    <nav class="w3sidenav" style="display: none;">
+        <h1> <span class="close" onclick="w3close()">Close</span></h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+
+    </nav>
+    <span class="open" onclick="w3open()">&#9776;</span>
+
+    <script>
+        function w3open() {
+            document.getElementsByClassName("w3sidenav")[0].style.display = "block";
+        }
+
+        function w3close() {
+            document.getElementsByClassName("w3sidenav")[0].style.display = "none";
+            
+        }
+    </script>
+</body>
+</html>
